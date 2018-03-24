@@ -63,8 +63,6 @@ public class ListaDeFrutasServlet extends HttpServlet {
                 if ("alf".equals(ordena)) {
                     Collections.sort(frutas);
                 } else if ("num".equals(ordena)) {
-//                    a.length() < b.length() ? a : b;
-//                    Collections.sort(frutas, (a, b) -> b.compareTo(a));
                     Collections.sort(frutas, (a, b) -> a.length()-b.length());
                 } else if ("ale".equals(ordena)) {
                     Collections.shuffle(frutas);
